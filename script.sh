@@ -10,6 +10,9 @@ echo "--- :evergreen_tree: Build job environment"
 
 env
 
+echo "--- :rocket: check pipenv"
+
+pipenv --version
 
 echo "+++ :hammer: Example tests"
 
