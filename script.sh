@@ -12,7 +12,7 @@ env
 
 echo "--- :rocket: check pipenv"
 
-pipenv --version
+python --version
 
 echo "+++ :hammer: Example tests"
 
