@@ -4,7 +4,7 @@ steps:
     artifact_paths: "artifacts/*"
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
-  - wait
+
   - block: "Request Release"
     fields:
       - text: "Code Name"
@@ -12,5 +12,6 @@ steps:
         hint: "What’s the code name for this release? :name_badge:"
         required: false
         default: "Release #"
+
   - name: ":codedeploy: Deployment"
     command: "echo 'deployment this crap now!'"
