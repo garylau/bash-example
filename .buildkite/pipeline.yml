@@ -7,3 +7,14 @@ steps:
       
   - name: ":hammer: Example Script 2"
     command: "script2.sh"
+
+  - block: "Request Release"
+    fields:
+      - text: "Code Name"
+        key: "release-name"
+        hint: "What’s the code name for this release? :name_badge:"
+        required: false
+        default: "Release #"
+
+  - name: ":codedeploy: Deployment"
+    command: "echo 'deployment this crap now!'"
