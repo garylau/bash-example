@@ -1,0 +1,5 @@
+set -eu
+
+echo 'This is a environment hook ...'
+
+export SOME_ENVIRONMETN_VARIABLE='blahblahblah'
