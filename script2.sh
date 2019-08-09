@@ -6,6 +6,8 @@ echo "Downloading artifacts ..."
 
 buildkite-agent artifact download "artifacts/*" artifacts/
 
+ls -lart artifacts
+
 echo -e "\033[33mCongratulations!\033[0m You've successfully run your first build on Buildkite! 👍
 
 \033[33m$(cat artifacts/thumbsup.txt)\033[0m
