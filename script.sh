@@ -26,10 +26,10 @@ python --version
 # "
 
 
-# echo "+++ :frame_with_picture: Inline image uploaded as a build artifact"
+echo "+++ :frame_with_picture: Inline image uploaded as a build artifact"
 
-# function inline_image {
-#   printf '\033]1338;url='"$1"';alt='"$2"'\a\n'
-# }
+function inline_image {
+  printf '\033]1338;url='"$1"';alt='"$2"'\a\n'
+}
 
-# inline_image 'artifact://artifacts/image.gif' 'Rainbows'
+inline_image 'artifact://artifacts/image.gif' 'Rainbows'

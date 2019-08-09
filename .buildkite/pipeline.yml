@@ -5,9 +5,10 @@ steps:
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
       
+  - wait
   - name: ":hammer: Example Script 2"
     command: "script2.sh"
-
+  - wait
   - block: "Request Release"
     fields:
       - text: "Code Name"
@@ -15,6 +16,6 @@ steps:
         hint: "What’s the code name for this release? :name_badge:"
         required: false
         default: "Release #"
-
+  - wait
   - name: ":codedeploy: Deployment"
     command: "echo 'deployment this crap now!'"
