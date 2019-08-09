@@ -21,7 +21,6 @@ If you have any questions or need help email support@buildkite.com, we'd be happ
 echo "+++ :frame_with_picture: Inline image uploaded as a build artifact"
 
 function inline_image {
-  ls -lart $1
   printf '\033]1338;url='"$1"';alt='"$2"'\a\n'
 }
 
