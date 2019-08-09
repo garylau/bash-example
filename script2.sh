@@ -25,4 +25,4 @@ function inline_image {
   printf '\033]1338;url='"$1"';alt='"$2"'\a\n'
 }
 
-inline_image './artifacts/image.gif' 'Rainbows'
+inline_image 'https://www.youareawesomebook.co.uk/wp-content/themes/you-are-awesome/assets/img/You-Are-Awesome-Header@1x.png' 'awesome'
